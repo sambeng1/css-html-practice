@@ -17,15 +17,13 @@ strong {
   line-height: 1.6;
 }
 
+.bold {
+  font-weight: bolder;
+}
+
 a {
   text-decoration: none;
   color: #ccc;
-}
-
-.logo {
-  width: 60%;
-  margin: 2rem auto;
-  padding-bottom: 2rem;
 }
 
 .container li {
@@ -39,8 +37,7 @@ a {
 }
 
 .mobile-mock-up {
-  margin: 2rem auto;
-  width: 50%;
+  width: 75%;
 }
 
 #overview h2 {
@@ -154,6 +151,19 @@ footer .footerCols ul li:first-child {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
+}
+
+.barcodes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.barcodes {
+  height: 150px;
+  width: auto;
+}
+
+.twoGrid p {
   text-align: left;
 }
 
@@ -180,7 +190,8 @@ footer .footerCols ul li:first-child {
 }
 
 section#engine {
-  background: url(../img/section-bg.jpg) no-repeat bottom/cover;
+  background: url(../Images/homePageImages/section-bg.jpg) no-repeat
+    bottom/cover;
   padding: 10rem 0;
 }
 
@@ -189,20 +200,22 @@ section#engine {
 #showcase {
   margin: 0;
   padding: 0;
-  background-color: #edeeee;
+  background-color: white;
   width: 100%;
-  height: 80vh;
+  height: auto;
   position: relative;
   overflow-y: hidden;
 }
 
 #showcase .container {
-  margin-top: 15vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 #showcase h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 #showcase h2 {
@@ -211,15 +224,25 @@ section#engine {
 
 /* Navigation */
 nav {
-  height: 47px;
+  height: 55px;
   width: 100%;
   background-color: #333;
   color: #eee;
   position: fixed;
 }
+
+.logo {
+  height: auto;
+  width: auto;
+  max-height: 25px;
+  max-width: 100px;
+  line-height: 55px; /* whatever the fixed height of the bar is */
+  vertical-align: middle;
+}
+
 nav ul {
   padding: 0;
-  margin: 0;
+  margin-top: 1vh;
 }
 nav li {
   display: inline;
@@ -233,6 +256,7 @@ nav a {
   padding: 10px 0;
   color: #eee;
   text-decoration: none;
+  vertical-align: middle;
 }
 nav li:hover {
   background-color: #444;
@@ -255,7 +279,7 @@ nav a#openup {
   }
 
   #showcase .container {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   #showcase h1 {
@@ -325,18 +349,13 @@ nav a#openup {
 }
 
 @media screen and (max-width: 780px) {
-  .logo {
+  /* .logo {
     width: 90%;
     margin: 2rem auto;
     padding-bottom: 2rem;
-  }
+  } */
   .twoGrid,
   .threeGrid {
     grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-height: 580px) {
-  #showcase p.lead {
-    display: none;
   }
 }
