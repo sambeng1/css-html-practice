@@ -17,6 +17,10 @@ strong {
   line-height: 1.6;
 }
 
+.checked-list {
+  list-style-image: url(../Images/homePageImages/check.png);
+}
+
 .bold {
   font-weight: bolder;
 }
@@ -76,6 +80,7 @@ footer .footerCols ul li:first-child {
   text-align: center;
   margin: 0 auto;
   padding: 2rem 3rem;
+  min-height: 95vh;
 }
 
 .textCenter {
@@ -118,6 +123,10 @@ footer .footerCols ul li:first-child {
   display: inline-block;
 }
 
+.button-box {
+  margin-bottom: 1rem;
+}
+
 .btnPrimary {
   background: var(--primary-color);
 }
@@ -128,7 +137,14 @@ footer .footerCols ul li:first-child {
 
 .btnSecondary {
   background: var(--secondary-color);
-  margin: 1rem auto 3rem auto;
+  margin: 1rem 1rem 3rem 1rem;
+  width: 12rem;
+}
+
+.btnThird {
+  background: var(--secondary-color);
+  margin: 0.5rem 1rem;
+  width: 12rem;
 }
 
 .btnSecondaryHover {
@@ -189,11 +205,23 @@ footer .footerCols ul li:first-child {
   padding-bottom: 2rem;
 }
 
+.showcase-logo {
+  height: auto;
+  width: 50%;
+  margin: 2rem auto;
+}
+
 section#engine {
   background: url(../Images/homePageImages/section-bg.jpg) no-repeat
     bottom/cover;
-  padding: 10rem 0;
+  padding: 3rem;
 }
+
+/* section#demo {
+  background: url(../Images/homePageImages/smartmockups_jxz9jm73.jpg) no-repeat;
+  padding: 10rem 0;
+  height: 50vh;
+} */
 
 /* Showcase */
 
@@ -208,7 +236,7 @@ section#engine {
 }
 
 #showcase .container {
-  margin-top: 10vh;
+  margin-top: 6vh;
   margin-bottom: 5vh;
 }
 
@@ -220,6 +248,7 @@ section#engine {
 
 #showcase h2 {
   font-size: 2rem;
+  margin-top: 3rem;
 }
 
 /* Navigation */
@@ -235,7 +264,7 @@ nav {
   height: auto;
   width: auto;
   max-height: 25px;
-  max-width: 100px;
+  max-width: 90px;
   line-height: 55px; /* whatever the fixed height of the bar is */
   vertical-align: middle;
 }
@@ -265,12 +294,42 @@ nav a#openup {
   display: none;
 }
 
+.contact-info {
+  list-style: none;
+  width: 70%;
+  margin: 3rem auto;
+}
+
+.showOnSmall {
+  display: none;
+}
+
 @media screen and (max-width: 620px) {
+  .twoGrid {
+    margin: 1rem auto;
+  }
+
+  .showcase-logo {
+    margin: 1rem auto;
+  }
+  .btnSecondary {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .barcodes-container {
+    margin-top: 2rem;
+  }
+
   #showcase p.lead {
     display: none;
   }
   .hideOnSmall {
     display: none;
+  }
+
+  .showOnSmall {
+    display: inline-block;
   }
 
   #showcase {
@@ -288,6 +347,7 @@ nav a#openup {
 
   #showcase h2 {
     font-size: 1.5rem;
+    margin: 1rem auto;
   }
 
   nav {
